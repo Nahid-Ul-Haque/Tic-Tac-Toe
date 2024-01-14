@@ -91,12 +91,12 @@ export default function Game() {
   });
 
   return (
-    <div>
+    <div className="flex justify-center p-2 gap-6">
       <div>
         <Board xisNext={xisNext} squares={currentSquares} onPlay={handleplay} />
       </div>
       <div>
-        <ol>{moves}</ol>
+        <ol className="border border-gray-400 p-2 text-lg">{moves}</ol>
       </div>
     </div>
   );
